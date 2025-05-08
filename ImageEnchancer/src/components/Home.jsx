@@ -3,6 +3,7 @@ import ImageUpload from './ImageUpload'
 import ImagePreview from './ImagePreview'
 import Loading from './Loading';
 import { useState } from 'react';
+import { enchancedImageAPI } from '../utils/enhancedImageAPI';
 
 
 const Home = () => {
@@ -19,6 +20,10 @@ const Home = () => {
         //URL.createObjectURL(file)-----> Will pass the Image in the form of Link
         setloading(true);
 
+
+
+
+
         //2) As well as Hitting the API too:-
         try {
 
@@ -33,15 +38,15 @@ const Home = () => {
     };
 
     return (
-        <div className=''>
+        <>
             <ImageUpload UploadimageHandler={UploadimageHandler} />
             {/* -----> Sending to """"""IMAGEUPLOAD.JSX""""""  */}
             <ImagePreview
                 loading={loading}
                 uploaded={uploadImage}
-                enhanced={enhancedImage}
+                enhanced={enhancedImage?.image}
             />
-        </div>
+        </>
     )
 }
 
