@@ -1,6 +1,6 @@
 import axios from './../../node_modules/axios/lib/axios';
 
-const API_KEY="wxrf6mjuwoj121rbg";
+const API_KEY="YOUR API KEY HERE";
 const BASE_URL="https://techhk.aoscdn.com";
 
 const MAXIMUM_RETRIES=5;
