@@ -1,5 +1,5 @@
 # 🖼️ AI Image Enhancer using PicWish API
-Iamge Enhancer App using PicWish API
+Image Enhancer App using PicWish API
 
 Enhance your images with AI using the **PicWish API** and a sleek React frontend. Just upload your photo and let the AI do the rest!
 
